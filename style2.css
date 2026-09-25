@@ -1,0 +1,310 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #faf9f6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    display: block;
+    width: 400px;
+    max-width: 90%;
+    height: auto;
+    margin: 20px auto;
+}
+
+
+/* =========================================
+   MENÚ / TÍTULO
+========================================= */
+
+nav {
+    background-color: #070738;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    text-decoration: none;
+    margin: 25px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   TÍTULOS
+========================================= */
+
+h1 {
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+}
+
+h2 {
+    width: 100%;
+    background-color: #070738;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 2px rgba(238, 235, 235, 0.15);
+}
+
+
+/* =========================================
+   CONTENEDOR DE PRODUCTOS
+========================================= */
+
+.contenedor-productos {
+    width: 90%;
+    max-width: 989px;
+    padding: 20px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   IMÁGENES DE PRODUCTOS
+========================================= */
+
+.Saphirus,
+.SandraMarzzan,
+.Buda,
+.Esencias,
+.Perfumes {
+    display: block;
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    margin: 15px auto;
+}
+
+
+/* =========================================
+   LISTA DE FRAGANCIAS
+========================================= */
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+
+    width: 100%;
+    margin-top: 20px;
+    padding: 25px;
+
+    border: 2px solid #050240cd;
+    border-radius: 10px;
+
+    font-size: 30px;
+    text-align: left;
+}
+
+li {
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+
+/* =========================================
+   CONTENEDOR SANDRA MARZZAN
+========================================= */
+
+.contenedor-SandraM {
+    font-family: "Dancing Script", cursive;
+    font-size: 70px;
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media screen and (max-width: 900px) {
+
+    .logo {
+        width: 300px;
+    }
+
+    nav h1 {
+        font-size: 42px;
+    }
+
+    .contenedor-productos {
+        width: 90%;
+    }
+
+    ul {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 25px;
+    }
+}
+
+
+/* =========================================
+   CELULARES
+========================================= */
+
+@media screen and (max-width: 600px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* LOGO */
+
+    .logo {
+        width: 220px;
+        max-width: 80%;
+        margin: 15px auto;
+    }
+
+
+    /* BARRA DEL TÍTULO */
+
+    nav {
+        width: 100%;
+        padding: 6px;
+    }
+
+    nav h1 {
+        font-size: 32px;
+        line-height: 1.2;
+        padding: 5px;
+    }
+
+
+    /* CONTENEDOR */
+
+    .contenedor-productos {
+        width: 92%;
+        max-width: 92%;
+        padding: 15px;
+        margin: 20px auto;
+        border-radius: 15px;
+    }
+
+
+    /* TÍTULO */
+
+    h2 {
+        width: 100%;
+        padding: 12px;
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+
+    /* IMÁGENES */
+
+    .Saphirus,
+    .SandraMarzzan,
+    .Buda,
+    .Esencias,
+    .Perfumes {
+        width: 180px;
+        max-width: 80%;
+        height: auto;
+        margin: 15px auto;
+    }
+
+
+    /* LISTA */
+
+    ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+        width: 100%;
+        padding: 15px;
+
+        font-size: 19px;
+    }
+
+    li {
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+
+    /* CONTENEDOR SANDRA */
+
+    .contenedor-SandraM {
+        font-size: 45px;
+        margin-top: 10px;
+    }
+
+}
+
+
+/* =========================================
+   CELULARES MUY PEQUEÑOS
+========================================= */
+
+@media screen and (max-width: 400px) {
+
+    nav h1 {
+        font-size: 28px;
+    }
+
+    .logo {
+        width: 190px;
+    }
+
+    .contenedor-productos {
+        width: 94%;
+        max-width: 94%;
+        padding: 10px;
+    }
+
+    ul {
+        gap: 8px;
+        padding: 10px;
+        font-size: 17px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+}
+
