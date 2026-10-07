@@ -67,6 +67,9 @@ nav a:hover {
 h1 {
     font-family: "Dancing Script", cursive;
     text-align: center;
+    color: #9999f7;
+    font-size: 50px;
+
 }
 
 h2 {
@@ -76,8 +79,17 @@ h2 {
     padding: 20px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 4px 2px rgba(238, 235, 235, 0.15);
+    box-shadow: 0 4px 2px rgba(238, 218, 218, 0.15);
 }
+
+h3 {
+    width: 100%;
+    color: rgb(4, 0, 0);
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
 
 
 /* =========================================

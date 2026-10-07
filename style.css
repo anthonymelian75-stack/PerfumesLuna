@@ -406,7 +406,7 @@ footer p {
     /* NOSOTROS */
 
     .nosotros {
-        padding: 45px 15px;
+        padding: 25px 10px;
     }
 
     .nosotros h2 {
@@ -422,7 +422,7 @@ footer p {
     /* CONTACTO */
 
     .contacto {
-        padding: 45px 15px;
+        padding: 25px 15px;
     }
 
     .contacto h2 {
@@ -479,5 +479,72 @@ footer p {
         max-width: 280px;
         margin: 0 auto;
     }
+    .ubicaciones {
+        padding: 50px 15px;
+}
 
+.ubicaciones h2 {
+    font-size: 30px;
+}
+
+.ubicacion {
+    width: 100%;
+    max-width: 320px;
+}
+    
+
+}
+
+/* =========================
+   UBICACIONES
+========================= */
+
+.ubicaciones {
+    background-color: #faf9f6;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.ubicaciones h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.contenedor-ubicaciones {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.ubicacion {
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.ubicacion h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.ubicacion p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.boton-mapa {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.boton-mapa:hover {
+    opacity: 0.8;
 }
